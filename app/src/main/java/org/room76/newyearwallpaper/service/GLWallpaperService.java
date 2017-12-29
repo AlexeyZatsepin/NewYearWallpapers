@@ -5,6 +5,8 @@ import android.opengl.GLSurfaceView;
 import android.service.wallpaper.WallpaperService;
 import android.view.SurfaceHolder;
 
+import org.room76.newyearwallpaper.R;
+
 /**
  * Created by Alexey on 12/29/17.
  */
@@ -13,8 +15,6 @@ public abstract class GLWallpaperService extends WallpaperService {
 
     public class GLEngine extends Engine {
         class WallpaperGLSurfaceView extends GLSurfaceView {
-            private static final String TAG = "WallpaperGLSurfaceView";
-
             WallpaperGLSurfaceView(Context context) {
                 super(context);
             }
