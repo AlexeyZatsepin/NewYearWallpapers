@@ -7,7 +7,7 @@ import android.content.pm.ConfigurationInfo;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 
-import org.room76.newyearwallpaper.newyear.SimpleRenderer;
+import org.room76.newyearwallpaper.newyear.SnowRenderer;
 
 /**
  * Created by Alexey on 12/29/17.
@@ -32,7 +32,7 @@ public class WallpaperActivity extends Activity {
             mGLSurfaceView.setEGLContextClientVersion(2);
 
             // Set the renderer to our demo renderer, defined below.
-            mGLSurfaceView.setRenderer(new SimpleRenderer());
+            mGLSurfaceView.setRenderer(new SnowRenderer());
         } else {
             // This is where you could create an OpenGL ES 1.x compatible
             // renderer if you wanted to support both ES 1 and ES 2.
