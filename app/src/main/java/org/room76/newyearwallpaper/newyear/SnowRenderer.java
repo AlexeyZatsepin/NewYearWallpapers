@@ -32,10 +32,12 @@ public class SnowRenderer implements GLSurfaceView.Renderer {
     private int aPositionLocation;
     private float slowdown = 2.0f;
     private static int PARTICLES_COUNT = 1000;
+    private Background background;
 
     public SnowRenderer(Context context) {
         this.context = context;
         prepareData();
+        background = new Background();
     }
 
     @Override
@@ -47,6 +49,8 @@ public class SnowRenderer implements GLSurfaceView.Renderer {
         int fragmentShaderId = Utils.createShader(context, GL_FRAGMENT_SHADER, R.raw.fragment_shader);
         programId = Utils.createProgram(vertexShaderId, fragmentShaderId);
         glUseProgram(programId);
+
+        background.generateProgram(context);
     }
 
     @Override
@@ -63,6 +67,8 @@ public class SnowRenderer implements GLSurfaceView.Renderer {
         bindData();
 
         glDrawArrays(GL_POINTS, 0, PARTICLES_COUNT);
+
+//        background.draw();
     }
 
     private void prepareData() {
