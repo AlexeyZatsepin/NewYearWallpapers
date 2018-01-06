@@ -4,7 +4,9 @@
 
 ## Overview
 
-blablabla
+<a href="url"><img src="https://github.com/AlexeyZatsepin/NewYearWallpaper/blob/master/screenshots/photo_2018-01-06_22-07-36.jpg?raw=true" align="center"></a>
+
+![Alt Text](https://github.com/AlexeyZatsepin/NewYearWallpaper/blob/master/screenshots/animation.gif)
 
 ## Setup
 
